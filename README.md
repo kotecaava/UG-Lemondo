@@ -17,6 +17,6 @@
 6) <a href="https://developer.apple.com/library/content/navigation/#section=Resource%20Types&topic=Sample%20Code">Apple Official Sample Codes</a>
 
 ## ჩაწერის სტილი
-1) კლასის სახელი იწყება დიდი ასოთი, ყოველი მომდევნო სიტყვე გრძელდება დიდი ასოთი CamelCase.
+1) კლასის სახელი იწყება დიდი ასოთი, ყოველი მომდევნო სიტყვა გრძელდება დიდი ასოთი CamelCase.
 2) მეთოდის სახელი იწყება პატარა ასოთი მაგ: func getUserInfo ().
 3) მეთოდის სახელი უნდა აღნიშნავდეს მოქმედებას და გვეუბნებოდეს რას აკეთებს.
