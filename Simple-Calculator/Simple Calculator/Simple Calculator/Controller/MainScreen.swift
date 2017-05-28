@@ -22,6 +22,7 @@ class MainScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     // MARK: - IBActions
@@ -51,11 +52,18 @@ class MainScreen: UIViewController {
     @IBAction func calculatorNumberTapped(_ sender: UIButton) {
         // if user clicks on the button, first it will add number as main,
         // following numbers will be concatinated from right to left
-        lblMain.text = isFirstDigit ? "\(sender.tag)" : lblMain.text! + "\(sender.tag)"
+        //        lblMain.text = isFirstDigit ? "\(sender.tag)" : lblMain.text! + "\(sender.tag)"
+        
+        
+        if isFirstDigit {
+            lblMain.text = "\(sender.tag)"
+        } else {
+            lblMain.text = lblMain.text! + "\(sender.tag)"
+        }
         isFirstDigit = false
     }
     
-    fileprivate func getCalculatedValue (with op: Int, num1: Double, num2: Double) -> Double {
+    func getCalculatedValue (num0 op: Int, num1: Double, num2: Double) -> Double {
         switch op {
         case 0:
             return num1 + num2

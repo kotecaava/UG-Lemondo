@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5qo-ak-DCf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstScreen" customModule="NavigationStack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Hw-QK-dht">
+                                <rect key="frame" x="0.0" y="20" width="375" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="WiF-Qc-cyu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015 World Cup Rugby Champions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoR-fR-qxv">
+                                <rect key="frame" x="53" y="269" width="269" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dJA-WK-JQC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJy-jW-jyB">
+                                <rect key="frame" x="118" y="339" width="138" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.71764705880000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zzc-p9-fFP"/>
+                                    <constraint firstAttribute="width" constant="138" id="whD-mV-chO"/>
+                                </constraints>
+                                <state key="normal" title="Show Lelo's">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToSecondScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlU-Vp-EHg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV4-HG-RuZ">
+                                <rect key="frame" x="16" y="377" width="343" height="270"/>
+                                <string key="text">მოცემული გვაქვს ImageView სადაც არის ჩასმული სურათი 'Show Lelo's' ღილაკზე დაჭერისას, ჩვენ ვქმნით შემდეგი გვერდის ანუ SecondScreen-ის ობიექტს, შემდეგ ვქმნით ცვლადს რომელსაც ვანიჭებთ სურათს, ამის შემდეგ ვუტოლებთ შემდეგი კონტროლერის ცვლადს, და გადავდივართ შემდეგ გვერდზე.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uJy-jW-jyB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5JT-2d-0S0"/>
+                            <constraint firstItem="EoR-fR-qxv" firstAttribute="top" secondItem="6Hw-QK-dht" secondAttribute="bottom" constant="8" id="D6r-Sp-FKr"/>
+                            <constraint firstItem="uJy-jW-jyB" firstAttribute="top" secondItem="EoR-fR-qxv" secondAttribute="bottom" constant="49" id="GeL-yw-oKa"/>
+                            <constraint firstAttribute="trailing" secondItem="6Hw-QK-dht" secondAttribute="trailing" id="J39-bB-xh2"/>
+                            <constraint firstAttribute="trailing" secondItem="AV4-HG-RuZ" secondAttribute="trailing" constant="16" id="JRj-vz-8dV"/>
+                            <constraint firstItem="6Hw-QK-dht" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KhW-gi-eCF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AV4-HG-RuZ" secondAttribute="bottom" constant="20" id="Ygs-Yl-vHx"/>
+                            <constraint firstAttribute="trailing" secondItem="EoR-fR-qxv" secondAttribute="trailing" constant="53" id="bT7-Ws-eL4"/>
+                            <constraint firstItem="6Hw-QK-dht" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cfY-vH-jAM"/>
+                            <constraint firstItem="EoR-fR-qxv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="53" id="dFL-By-FN6"/>
+                            <constraint firstItem="AV4-HG-RuZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="fKS-lf-8uh"/>
+                            <constraint firstItem="AV4-HG-RuZ" firstAttribute="top" secondItem="uJy-jW-jyB" secondAttribute="bottom" constant="8" id="hxC-Xd-5Om"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LdO-nT-x9Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BhW-Mt-Paq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="5qo-ak-DCf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k05-GV-19D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yLZ-EO-QGk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lko-xi-mqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="137"/>
+        </scene>
+        <!--Second Screen-->
+        <scene sceneID="XX9-Ju-dwW">
+            <objects>
+                <viewController storyboardIdentifier="xxxSecondScreen" id="Hx7-Va-w3c" customClass="SecondScreen" customModule="NavigationStack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iV7-Jt-WoE"/>
+                        <viewControllerLayoutGuide type="bottom" id="3XC-fr-mkQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U0x-zB-xYm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QAS-gH-QMv">
+                                <rect key="frame" x="0.0" y="20.5" width="375" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="rB6-MO-nxm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Georgian Lelo's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD9-Qm-apH">
+                                <rect key="frame" x="53" y="269.5" width="269" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xw8-pg-zf4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlw-0l-sX8">
+                                <rect key="frame" x="105" y="339.5" width="165" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.71764705880000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NEY-7Q-xy7"/>
+                                    <constraint firstAttribute="width" constant="165" id="nUf-6O-E03"/>
+                                </constraints>
+                                <state key="normal" title="Show Georgian Cup">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showGeorgianCupTapped:" destination="Hx7-Va-w3c" eventType="touchUpInside" id="QV6-qr-70h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psp-15-2hs">
+                                <rect key="frame" x="105" y="376" width="165" height="30"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.13725490200000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="h2M-LS-TKi"/>
+                                    <constraint firstAttribute="height" constant="30" id="lox-v5-2zA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="დაბრუნდი უკან">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="Hx7-Va-w3c" eventType="touchUpInside" id="CZb-1y-hQv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uge-im-cXs">
+                                <rect key="frame" x="16" y="452" width="343" height="196"/>
+                                <string key="text">ამ მომენტში ჩვენი ImageView არის ცარიელი, ხოლო როდესაც კონტროლერი სახელად FirstScreen შექმნის ამ კონტროლერის ობიექტს, ის გადმოსცემს სურათს რომელიც უნდა ვაჩვენოთ ამ ImageView-ში, თუ დავაჭერთ 'დაბრუნდი უკან', უნდა გადავიდეთ FirstScreen-ზე, ხოლო თუ დავაჭერთ 'Show Georgian Cup', უნდა გადავცეთ შემდეგი სურათი და გადავიდეთ ThirdScreen-ზე.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QAS-gH-QMv" firstAttribute="top" secondItem="U0x-zB-xYm" secondAttribute="top" constant="20.5" id="3WK-sX-MHE"/>
+                            <constraint firstAttribute="trailing" secondItem="uge-im-cXs" secondAttribute="trailing" constant="16" id="3hZ-o1-ObF"/>
+                            <constraint firstItem="QAS-gH-QMv" firstAttribute="leading" secondItem="U0x-zB-xYm" secondAttribute="leading" id="Dhu-wA-T8I"/>
+                            <constraint firstAttribute="trailing" secondItem="TD9-Qm-apH" secondAttribute="trailing" constant="53" id="GJh-wb-ri1"/>
+                            <constraint firstItem="3XC-fr-mkQ" firstAttribute="top" secondItem="uge-im-cXs" secondAttribute="bottom" constant="19" id="NzS-5v-Qg7"/>
+                            <constraint firstAttribute="trailing" secondItem="QAS-gH-QMv" secondAttribute="trailing" id="Q92-dh-g1z"/>
+                            <constraint firstItem="TD9-Qm-apH" firstAttribute="leading" secondItem="U0x-zB-xYm" secondAttribute="leading" constant="53" id="Rvz-bc-AcI"/>
+                            <constraint firstItem="psp-15-2hs" firstAttribute="centerX" secondItem="U0x-zB-xYm" secondAttribute="centerX" id="YKJ-oD-Q6Q"/>
+                            <constraint firstItem="jlw-0l-sX8" firstAttribute="top" secondItem="TD9-Qm-apH" secondAttribute="bottom" constant="49" id="YO3-f0-bEu"/>
+                            <constraint firstItem="psp-15-2hs" firstAttribute="top" secondItem="jlw-0l-sX8" secondAttribute="bottom" constant="6.5" id="gyl-a0-4J6"/>
+                            <constraint firstItem="TD9-Qm-apH" firstAttribute="top" secondItem="QAS-gH-QMv" secondAttribute="bottom" constant="8" id="hjc-UK-3AK"/>
+                            <constraint firstItem="jlw-0l-sX8" firstAttribute="centerX" secondItem="U0x-zB-xYm" secondAttribute="centerX" id="khA-p9-PA8"/>
+                            <constraint firstItem="uge-im-cXs" firstAttribute="leading" secondItem="U0x-zB-xYm" secondAttribute="leading" constant="16" id="l8q-NH-oRf"/>
+                            <constraint firstItem="uge-im-cXs" firstAttribute="top" secondItem="psp-15-2hs" secondAttribute="bottom" constant="46" id="yu8-Jd-vSu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fnP-te-O3d"/>
+                    <connections>
+                        <outlet property="imageView" destination="QAS-gH-QMv" id="t1k-8z-WYm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7S-HS-Xsz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725.5999999999999" y="134.48275862068968"/>
+        </scene>
+        <!--Third Screen-->
+        <scene sceneID="Zjg-CM-5A4">
+            <objects>
+                <viewController storyboardIdentifier="xxxThirdScreen" id="vrb-Mk-4Wz" customClass="ThirdScreen" customModule="NavigationStack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5o2-tU-kUg"/>
+                        <viewControllerLayoutGuide type="bottom" id="n6Y-Gu-71W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="owO-FK-KRg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cd-Kz-3ua">
+                                <rect key="frame" x="0.0" y="20.5" width="375" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="DzQ-bw-gb1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Georgian Cup Winners" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxM-oN-x8j">
+                                <rect key="frame" x="53" y="269.5" width="269" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6dy-Qj-7u8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G88-tI-1bi">
+                                <rect key="frame" x="92" y="339.5" width="190" height="30"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="nor-Tv-xrp"/>
+                                    <constraint firstAttribute="height" constant="30" id="oAg-pN-NBP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="დაბრუნდი უკან">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="vrb-Mk-4Wz" eventType="touchUpInside" id="Ya6-3g-SWT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tv-0D-Ycm">
+                                <rect key="frame" x="92" y="376" width="190" height="30"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.13725490200000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LiA-H0-Wn8"/>
+                                    <constraint firstAttribute="width" constant="190" id="pbV-oK-R0u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="დაბრუნდი დასაწყისში">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToFirstScreenTapped:" destination="vrb-Mk-4Wz" eventType="touchUpInside" id="pKk-gQ-V2P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw1-ww-AaR">
+                                <rect key="frame" x="16" y="452" width="343" height="196"/>
+                                <string key="text">ImageView-ში უნდა ჩავსვათ ის სურათი რომელიც გადმოეცა ამ კონტროლერს SecondScreen-იდან, თუ დავაჭერთ 'დაბრუნდი უკან' უნდა გადავიდეთ წინა გვერდზე, ხოლო თუ დავაჭერთ 'დაბრუნდი დასაწყისში' მაშინ უნდა გადავიდეთ FirstScreen-ზე ანუ პირველ გვერდზე.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.71764705880000002" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G88-tI-1bi" firstAttribute="top" secondItem="cxM-oN-x8j" secondAttribute="bottom" constant="49" id="03p-qT-S8O"/>
+                            <constraint firstItem="6cd-Kz-3ua" firstAttribute="top" secondItem="owO-FK-KRg" secondAttribute="top" constant="20.5" id="0i8-EU-hD1"/>
+                            <constraint firstItem="zw1-ww-AaR" firstAttribute="leading" secondItem="owO-FK-KRg" secondAttribute="leading" constant="16" id="3c6-Lz-GsF"/>
+                            <constraint firstItem="6cd-Kz-3ua" firstAttribute="leading" secondItem="owO-FK-KRg" secondAttribute="leading" id="4OV-QZ-Js5"/>
+                            <constraint firstAttribute="trailing" secondItem="cxM-oN-x8j" secondAttribute="trailing" constant="53" id="Clj-dN-fDx"/>
+                            <constraint firstItem="G88-tI-1bi" firstAttribute="centerX" secondItem="owO-FK-KRg" secondAttribute="centerX" id="JBy-Kj-dHL"/>
+                            <constraint firstItem="cxM-oN-x8j" firstAttribute="leading" secondItem="owO-FK-KRg" secondAttribute="leading" constant="53" id="OtA-Vk-CXD"/>
+                            <constraint firstItem="cxM-oN-x8j" firstAttribute="top" secondItem="6cd-Kz-3ua" secondAttribute="bottom" constant="8" id="PSc-av-aAA"/>
+                            <constraint firstAttribute="trailing" secondItem="zw1-ww-AaR" secondAttribute="trailing" constant="16" id="TJe-aM-pro"/>
+                            <constraint firstItem="1tv-0D-Ycm" firstAttribute="top" secondItem="G88-tI-1bi" secondAttribute="bottom" constant="6.5" id="VK9-Fv-7Rn"/>
+                            <constraint firstAttribute="trailing" secondItem="6cd-Kz-3ua" secondAttribute="trailing" id="cdJ-0N-d77"/>
+                            <constraint firstItem="1tv-0D-Ycm" firstAttribute="centerX" secondItem="owO-FK-KRg" secondAttribute="centerX" id="dQR-S3-cto"/>
+                            <constraint firstItem="n6Y-Gu-71W" firstAttribute="top" secondItem="zw1-ww-AaR" secondAttribute="bottom" constant="19" id="rLS-pP-8EO"/>
+                            <constraint firstItem="zw1-ww-AaR" firstAttribute="top" secondItem="1tv-0D-Ycm" secondAttribute="bottom" constant="46" id="uxb-PF-Jll"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kv5-pQ-Z6N"/>
+                    <connections>
+                        <outlet property="imageView" destination="6cd-Kz-3ua" id="ucY-Hi-zyJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWa-He-79P" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2349.5999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="600" height="399"/>
+    </resources>
+</document>
