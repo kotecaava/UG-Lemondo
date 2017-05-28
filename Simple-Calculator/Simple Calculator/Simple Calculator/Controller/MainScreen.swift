@@ -28,7 +28,7 @@ class MainScreen: UIViewController {
     // MARK: - IBActions
     @IBAction func equalButtonTapped(_ sender: UIButton) {
         if !lblMain.text!.isEmpty {
-            let number = getCalculatedValue(with: arithmetic, num1: calculatedNumOne, num2: Double(lblMain.text!)!)
+            let number = getCalculatedValue(num0: arithmetic, num1: calculatedNumOne, num2: Double(lblMain.text!)!)
             lblMain.text = "\(number)"
         } else {
             print("Could not make math operation because text is empty")
@@ -52,15 +52,7 @@ class MainScreen: UIViewController {
     @IBAction func calculatorNumberTapped(_ sender: UIButton) {
         // if user clicks on the button, first it will add number as main,
         // following numbers will be concatinated from right to left
-        //        lblMain.text = isFirstDigit ? "\(sender.tag)" : lblMain.text! + "\(sender.tag)"
-        
-        
-        if isFirstDigit {
-            lblMain.text = "\(sender.tag)"
-        } else {
-            lblMain.text = lblMain.text! + "\(sender.tag)"
-        }
-        isFirstDigit = false
+        lblMain.text = isFirstDigit ? "\(sender.tag)" : lblMain.text! + "\(sender.tag)"
     }
     
     func getCalculatedValue (num0 op: Int, num1: Double, num2: Double) -> Double {
