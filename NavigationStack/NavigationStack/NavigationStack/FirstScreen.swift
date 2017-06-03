@@ -16,5 +16,5 @@ class FirstScreen: UIViewController {
         vc?.image = image!
         navigationController?.pushViewController(vc!, animated: true)
     }
-
+    
 }

@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		03C18FDF1EDC4F35006AE27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C18FDE1EDC4F35006AE27C /* AppDelegate.swift */; };
 		03C190011EDC57E0006AE27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C18FF31EDC57E0006AE27C /* ViewController.swift */; };
-		03C190021EDC57E0006AE27C /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C18FF71EDC57E0006AE27C /* Billabong.ttf */; };
 		03C190031EDC57E0006AE27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C18FF91EDC57E0006AE27C /* Assets.xcassets */; };
 		03C190051EDC57E0006AE27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C18FFD1EDC57E0006AE27C /* LaunchScreen.storyboard */; };
 		03C190061EDC57E0006AE27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C18FFF1EDC57E0006AE27C /* Main.storyboard */; };
 		03C190081EDC57F9006AE27C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C190071EDC57F9006AE27C /* TableViewCell.swift */; };
 		03C1900A1EDC5847006AE27C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C190091EDC5847006AE27C /* User.swift */; };
+		03D09A071EDC9A450011FAA7 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03C18FF71EDC57E0006AE27C /* Billabong.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,7 +192,7 @@
 				03C190031EDC57E0006AE27C /* Assets.xcassets in Resources */,
 				03C190061EDC57E0006AE27C /* Main.storyboard in Resources */,
 				03C190051EDC57E0006AE27C /* LaunchScreen.storyboard in Resources */,
-				03C190021EDC57E0006AE27C /* Billabong.ttf in Resources */,
+				03D09A071EDC9A450011FAA7 /* Billabong.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +370,7 @@
 				03C18FEF1EDC4F35006AE27C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

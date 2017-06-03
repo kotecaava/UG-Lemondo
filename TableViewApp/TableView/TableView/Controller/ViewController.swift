@@ -22,7 +22,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    // MARK: - Information Fetch
     func fetchInformation () {
+        
         for i in 1..<10 {
             let object = User()
             object.avatar = UIImage(named: "avatar_\(i)")
