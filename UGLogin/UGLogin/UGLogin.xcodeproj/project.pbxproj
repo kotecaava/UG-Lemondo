@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E378DF1EEB03E30051E3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E378DE1EEB03E30051E3A5 /* AppDelegate.swift */; };
+		03E378FC1EEB08810051E3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E378F41EEB08810051E3A5 /* Assets.xcassets */; };
+		03E378FE1EEB08810051E3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E378F81EEB08810051E3A5 /* LaunchScreen.storyboard */; };
+		03E378FF1EEB08810051E3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03E378FA1EEB08810051E3A5 /* Main.storyboard */; };
+		03E379031EEB09350051E3A5 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E379021EEB09350051E3A5 /* MainScreen.swift */; };
+		03F538FF1EEB53D700E59FAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F538FE1EEB53D700E59FAC /* User.swift */; };
+		3D15CF75B1D3BE00FF2F4CDB /* Pods_UGLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0F2B2C2774B3310C971B37 /* Pods_UGLogin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03E378DB1EEB03E30051E3A5 /* UGLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UGLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E378DE1EEB03E30051E3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03E378F41EEB08810051E3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03E378F61EEB08810051E3A5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E378F91EEB08810051E3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03E378FB1EEB08810051E3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03E379021EEB09350051E3A5 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		03F538FE1EEB53D700E59FAC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F0F2B2C2774B3310C971B37 /* Pods_UGLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UGLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99126D8FE65431B3B39638B9 /* Pods-UGLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UGLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-UGLogin/Pods-UGLogin.release.xcconfig"; sourceTree = "<group>"; };
+		A16D6D521042AFD9CE996116 /* Pods-UGLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UGLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UGLogin/Pods-UGLogin.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03E378D81EEB03E30051E3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D15CF75B1D3BE00FF2F4CDB /* Pods_UGLogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E378D21EEB03E30051E3A5 = {
+			isa = PBXGroup;
+			children = (
+				03E378DD1EEB03E30051E3A5 /* UGLogin */,
+				03E378DC1EEB03E30051E3A5 /* Products */,
+				421315C609C525523B3D94F4 /* Pods */,
+				4FCA10A33DDD078B92FB443E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03E378DC1EEB03E30051E3A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03E378DB1EEB03E30051E3A5 /* UGLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E378DD1EEB03E30051E3A5 /* UGLogin */ = {
+			isa = PBXGroup;
+			children = (
+				03E378DE1EEB03E30051E3A5 /* AppDelegate.swift */,
+				03E378F11EEB08810051E3A5 /* Model */,
+				03E378F71EEB08810051E3A5 /* View */,
+				03E378F01EEB08810051E3A5 /* Controller */,
+				03E378F21EEB08810051E3A5 /* Resources */,
+				03E378F51EEB08810051E3A5 /* SupportingFiles */,
+			);
+			path = UGLogin;
+			sourceTree = "<group>";
+		};
+		03E378F01EEB08810051E3A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03E379001EEB08F50051E3A5 /* MainScreen */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03E378F11EEB08810051E3A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03F538FE1EEB53D700E59FAC /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03E378F21EEB08810051E3A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03E378F31EEB08810051E3A5 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03E378F31EEB08810051E3A5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				03E378F41EEB08810051E3A5 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		03E378F51EEB08810051E3A5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				03E378F61EEB08810051E3A5 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		03E378F71EEB08810051E3A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03E378F81EEB08810051E3A5 /* LaunchScreen.storyboard */,
+				03E378FA1EEB08810051E3A5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03E379001EEB08F50051E3A5 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				03E379021EEB09350051E3A5 /* MainScreen.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		421315C609C525523B3D94F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A16D6D521042AFD9CE996116 /* Pods-UGLogin.debug.xcconfig */,
+				99126D8FE65431B3B39638B9 /* Pods-UGLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FCA10A33DDD078B92FB443E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F0F2B2C2774B3310C971B37 /* Pods_UGLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E378DA1EEB03E30051E3A5 /* UGLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E378ED1EEB03E30051E3A5 /* Build configuration list for PBXNativeTarget "UGLogin" */;
+			buildPhases = (
+				AB1CE120AE42D16E6BDB0BA6 /* [CP] Check Pods Manifest.lock */,
+				03E378D71EEB03E30051E3A5 /* Sources */,
+				03E378D81EEB03E30051E3A5 /* Frameworks */,
+				03E378D91EEB03E30051E3A5 /* Resources */,
+				81E756D02E3EAFD6C6A36A0E /* [CP] Embed Pods Frameworks */,
+				11B7274509F7C491513843F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UGLogin;
+			productName = UGLogin;
+			productReference = 03E378DB1EEB03E30051E3A5 /* UGLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03E378D31EEB03E30051E3A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Levan Mamulashvili";
+				TargetAttributes = {
+					03E378DA1EEB03E30051E3A5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 75A5DAPRYG;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 03E378D61EEB03E30051E3A5 /* Build configuration list for PBXProject "UGLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03E378D21EEB03E30051E3A5;
+			productRefGroup = 03E378DC1EEB03E30051E3A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E378DA1EEB03E30051E3A5 /* UGLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03E378D91EEB03E30051E3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E378FE1EEB08810051E3A5 /* LaunchScreen.storyboard in Resources */,
+				03E378FC1EEB08810051E3A5 /* Assets.xcassets in Resources */,
+				03E378FF1EEB08810051E3A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11B7274509F7C491513843F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UGLogin/Pods-UGLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81E756D02E3EAFD6C6A36A0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UGLogin/Pods-UGLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1CE120AE42D16E6BDB0BA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03E378D71EEB03E30051E3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E379031EEB09350051E3A5 /* MainScreen.swift in Sources */,
+				03E378DF1EEB03E30051E3A5 /* AppDelegate.swift in Sources */,
+				03F538FF1EEB53D700E59FAC /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03E378F81EEB08810051E3A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E378F91EEB08810051E3A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		03E378FA1EEB08810051E3A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E378FB1EEB08810051E3A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03E378EB1EEB03E30051E3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03E378EC1EEB03E30051E3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03E378EE1EEB03E30051E3A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16D6D521042AFD9CE996116 /* Pods-UGLogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75A5DAPRYG;
+				INFOPLIST_FILE = "$(SRCROOT)/UGLogin/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UG-Lemondo.UGLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		03E378EF1EEB03E30051E3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99126D8FE65431B3B39638B9 /* Pods-UGLogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 75A5DAPRYG;
+				INFOPLIST_FILE = "$(SRCROOT)/UGLogin/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UG-Lemondo.UGLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E378D61EEB03E30051E3A5 /* Build configuration list for PBXProject "UGLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E378EB1EEB03E30051E3A5 /* Debug */,
+				03E378EC1EEB03E30051E3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E378ED1EEB03E30051E3A5 /* Build configuration list for PBXNativeTarget "UGLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E378EE1EEB03E30051E3A5 /* Debug */,
+				03E378EF1EEB03E30051E3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03E378D31EEB03E30051E3A5 /* Project object */;
+}

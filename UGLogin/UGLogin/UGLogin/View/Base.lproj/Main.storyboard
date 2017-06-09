@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lpg-Qs-cks">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate-->
+        <scene sceneID="O68-C4-mAJ">
+            <objects>
+                <viewController storyboardIdentifier="xxxMainScreen" id="IEC-EL-bVy" customClass="MainScreen" customModule="UGLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O0y-FB-b31"/>
+                        <viewControllerLayoutGuide type="bottom" id="aUI-G7-Tss"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oMs-6v-qDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBh-lB-hLs" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="104" y="318" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6o8-IJ-3m0"/>
+                                    <constraint firstAttribute="width" constant="167" id="tOM-sT-cUq"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="IEC-EL-bVy" id="h2I-OV-Kai"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PBh-lB-hLs" firstAttribute="centerY" secondItem="oMs-6v-qDC" secondAttribute="centerY" id="jJr-7M-JIF"/>
+                            <constraint firstItem="PBh-lB-hLs" firstAttribute="centerX" secondItem="oMs-6v-qDC" secondAttribute="centerX" id="uVy-Dd-HOS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VMf-k6-yB3"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="PBh-lB-hLs" id="NXg-Zy-BIp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="20a-Ff-dws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.79999999999995" y="125.4872563718141"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="opj-Xe-Vs7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lpg-Qs-cks" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ozE-ff-Dt7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IEC-EL-bVy" kind="relationship" relationship="rootViewController" id="NQt-1J-hj9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anv-yq-OKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31.199999999999999" y="126.38680659670166"/>
+        </scene>
+    </scenes>
+</document>
