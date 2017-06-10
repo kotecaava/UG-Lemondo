@@ -31,16 +31,58 @@
                                     <outlet property="delegate" destination="IEC-EL-bVy" id="h2I-OV-Kai"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvN-F6-hMT" userLabel="Holder">
+                                <rect key="frame" x="36" y="20" width="303" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-8a-MTg">
+                                        <rect key="frame" x="108" y="0.0" width="195" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.066666666669999999" green="0.17254901959999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7e-Ct-S7W">
+                                        <rect key="frame" x="108" y="29" width="195" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="0.066666666669999999" green="0.17254901959999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-wp-04k">
+                                        <rect key="frame" x="108" y="58" width="195" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="0.066666666669999999" green="0.17254901959999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtK-fc-pye">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="230-cc-MS2"/>
+                                    <constraint firstAttribute="height" constant="100" id="HC5-g2-vO8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bvN-F6-hMT" firstAttribute="centerX" secondItem="oMs-6v-qDC" secondAttribute="centerX" id="DUJ-MC-qyf"/>
+                            <constraint firstItem="bvN-F6-hMT" firstAttribute="top" secondItem="O0y-FB-b31" secondAttribute="bottom" constant="20" id="YwK-He-eAN"/>
                             <constraint firstItem="PBh-lB-hLs" firstAttribute="centerY" secondItem="oMs-6v-qDC" secondAttribute="centerY" id="jJr-7M-JIF"/>
                             <constraint firstItem="PBh-lB-hLs" firstAttribute="centerX" secondItem="oMs-6v-qDC" secondAttribute="centerX" id="uVy-Dd-HOS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VMf-k6-yB3"/>
                     <connections>
+                        <outlet property="avatar" destination="EtK-fc-pye" id="Oi9-yM-gsD"/>
                         <outlet property="btnLogin" destination="PBh-lB-hLs" id="NXg-Zy-BIp"/>
+                        <outlet property="holder" destination="bvN-F6-hMT" id="AD3-Zj-s5u"/>
+                        <outlet property="lblEmail" destination="75Z-wp-04k" id="Mdb-lM-EV8"/>
+                        <outlet property="lblId" destination="U7e-Ct-S7W" id="33R-PB-Rl8"/>
+                        <outlet property="lblName" destination="ywI-8a-MTg" id="wdu-5E-llZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20a-Ff-dws" userLabel="First Responder" sceneMemberID="firstResponder"/>
